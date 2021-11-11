@@ -59,11 +59,11 @@ cat ~/.bash_profile
 echo "Setup Sudoers"
 echo -e "\n${USER} ALL=(ALL) NOPASSWD: ALL" | sudo EDITOR="tee -a" visudo
 
-echo "Fix Applications"
+# echo "Fix Applications"
 # sudo chown -R $(whoami):staff /Applications/*
 
 echo "Setup XCode..."
-xcode-select -p
+# xcode-select -p
 xcode-select --install
 sudo xcode-select --reset
 sudo xcodebuild -license accept
