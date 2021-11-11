@@ -41,7 +41,7 @@ echo "Hello $(whoami)! Let's get you set up."
 
 echo "Starting bootstrapping"
 set -euo pipefail
-shopt -s nullglob dotglob globstar
+shopt -s nullglob dotglob
 
 echo "Setting up Bash Profile"
 touch ~/.zshrc
@@ -503,6 +503,7 @@ killall -KILL Finder
 killall -KILL Dock
 brew cleanup
 brew config
+shopt -s nullglob dotglob globstar
 
 echo "Bootstrapping complete!"
 
