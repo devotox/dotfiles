@@ -60,7 +60,7 @@ echo "Setup Sudoers"
 echo -e "\n${USER} ALL=(ALL) NOPASSWD: ALL" | sudo EDITOR="tee -a" visudo
 
 echo "Fix Applications"
-sudo chown -R $(whoami):staff /Applications/*
+# sudo chown -R $(whoami):staff /Applications/*
 
 echo "Setup XCode..."
 xcode-select -p
