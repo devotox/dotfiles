@@ -21,7 +21,7 @@
 # - http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/
 
 # Run without downloading:
-# curl https://raw.githubusercontent.com/devotox/dotfiles/HEAD/.macos | bash
+# curl https://raw.githubusercontent.com/devotox/dotfiles/HEAD/setup.sh | bash
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -78,6 +78,10 @@ else
 fi
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+echo "Installing Brew Packages from Bundle..."
+curl https://raw.githubusercontent.com/devotox/dotfiles/HEAD/Brewfile -o Brewfile
+brew bundle
 
 echo "Installing Brew Packages..."
 BREW=(
