@@ -19,10 +19,7 @@
 # - https://gist.github.com/MatthewMueller/e22d9840f9ea2fee4716
 # - https://news.ycombinator.com/item?id=8402079
 # - http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/
-
-# Run without downloading:
-# curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/devotox/dotfiles/HEAD/setup.sh | bash
-
+#
 ###############################################################################
 # Devonte's Customizations                                                    #
 ###############################################################################
@@ -34,6 +31,8 @@
 ./brew-setup.sh
 
 ./package-setup.sh
+
+./dl-setup.sh
 
 ./mac-setup.sh
 

@@ -23,3 +23,5 @@
 ./config-setup.sh
 
 ./git-setup.sh
+
+./fish-paths-setup.sh
