@@ -24,7 +24,6 @@ if test -f "Brewfile"; then
     return 0 2> /dev/null || exit 0
 fi
 
-
 echo "Installing Brew Packages..."
 BREW=(
     ack
